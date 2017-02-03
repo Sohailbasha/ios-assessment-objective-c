@@ -12,6 +12,8 @@
 		9D209EC81E429BE9005D1FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209EBD1E429BE9005D1FED /* Main.storyboard */; };
 		9D209ECA1E429BE9005D1FED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D209EC21E429BE9005D1FED /* AppDelegate.m */; };
 		9D209ECB1E429BE9005D1FED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D209EC31E429BE9005D1FED /* main.m */; };
+		FD1F60161E44E43C00C9EA8D /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F60151E44E43C00C9EA8D /* MoviesTableViewController.swift */; };
+		FD1F60191E44E57D00C9EA8D /* SMBMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F60181E44E57D00C9EA8D /* SMBMovies.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		9D209EC11E429BE9005D1FED /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D209EC21E429BE9005D1FED /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9D209EC31E429BE9005D1FED /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD1F60141E44E43B00C9EA8D /* MovieSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MovieSearch-Bridging-Header.h"; path = "../Resources/MovieSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD1F60151E44E43C00C9EA8D /* MoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoviesTableViewController.swift; path = Sources/MoviesTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FD1F60171E44E57D00C9EA8D /* SMBMovies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBMovies.h; sourceTree = "<group>"; };
+		FD1F60181E44E57D00C9EA8D /* SMBMovies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBMovies.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		9D209ECD1E429C35005D1FED /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FD1F60151E44E43C00C9EA8D /* MoviesTableViewController.swift */,
+				FD1F60141E44E43B00C9EA8D /* MovieSearch-Bridging-Header.h */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -94,6 +102,8 @@
 		9D209ECF1E429C52005D1FED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD1F60171E44E57D00C9EA8D /* SMBMovies.h */,
+				FD1F60181E44E57D00C9EA8D /* SMBMovies.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -146,6 +156,7 @@
 					9D209E9E1E429BCE005D1FED = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 357NQPN89X;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -186,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1F60161E44E43C00C9EA8D /* MoviesTableViewController.swift in Sources */,
 				9D209ECB1E429BE9005D1FED /* main.m in Sources */,
 				9D209ECA1E429BE9005D1FED /* AppDelegate.m in Sources */,
+				FD1F60191E44E57D00C9EA8D /* SMBMovies.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,11 +320,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 357NQPN89X;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DevMountain.MovieSearch-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Resources/MovieSearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -319,11 +336,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 357NQPN89X;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DevMountain.MovieSearch-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Resources/MovieSearch-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
