@@ -10,7 +10,16 @@
 
 @implementation SMBMovies
 
-
+- (instancetype)initWithTitle:(NSString *)title rating:(NSInteger)rating summary:(NSString *)summary
+{
+    self = [super init];
+    if (self) {
+        _title = [title copy];
+        _rating = rating;
+        _summary = summary;
+    }
+    return self;
+}
 
 
 @end
