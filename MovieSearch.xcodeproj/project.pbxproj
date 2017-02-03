@@ -14,6 +14,8 @@
 		9D209ECB1E429BE9005D1FED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D209EC31E429BE9005D1FED /* main.m */; };
 		FD1F60161E44E43C00C9EA8D /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F60151E44E43C00C9EA8D /* MoviesTableViewController.swift */; };
 		FD1F60191E44E57D00C9EA8D /* SMBMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F60181E44E57D00C9EA8D /* SMBMovies.m */; };
+		FD1F601C1E44F19F00C9EA8D /* SMBNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F601B1E44F19F00C9EA8D /* SMBNetworkController.m */; };
+		FD1F601F1E44F3CC00C9EA8D /* SMBMoviesController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F601E1E44F3CC00C9EA8D /* SMBMoviesController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		FD1F60151E44E43C00C9EA8D /* MoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoviesTableViewController.swift; path = Sources/MoviesTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FD1F60171E44E57D00C9EA8D /* SMBMovies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBMovies.h; sourceTree = "<group>"; };
 		FD1F60181E44E57D00C9EA8D /* SMBMovies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBMovies.m; sourceTree = "<group>"; };
+		FD1F601A1E44F19F00C9EA8D /* SMBNetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBNetworkController.h; sourceTree = "<group>"; };
+		FD1F601B1E44F19F00C9EA8D /* SMBNetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBNetworkController.m; sourceTree = "<group>"; };
+		FD1F601D1E44F3CC00C9EA8D /* SMBMoviesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBMoviesController.h; sourceTree = "<group>"; };
+		FD1F601E1E44F3CC00C9EA8D /* SMBMoviesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBMoviesController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				9D209EC31E429BE9005D1FED /* main.m */,
+				FD1F601A1E44F19F00C9EA8D /* SMBNetworkController.h */,
+				FD1F601B1E44F19F00C9EA8D /* SMBNetworkController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -111,6 +119,8 @@
 		9D209ED01E429C57005D1FED /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FD1F601D1E44F3CC00C9EA8D /* SMBMoviesController.h */,
+				FD1F601E1E44F3CC00C9EA8D /* SMBMoviesController.m */,
 			);
 			name = "Model Controllers";
 			sourceTree = "<group>";
@@ -199,8 +209,10 @@
 			files = (
 				FD1F60161E44E43C00C9EA8D /* MoviesTableViewController.swift in Sources */,
 				9D209ECB1E429BE9005D1FED /* main.m in Sources */,
+				FD1F601C1E44F19F00C9EA8D /* SMBNetworkController.m in Sources */,
 				9D209ECA1E429BE9005D1FED /* AppDelegate.m in Sources */,
 				FD1F60191E44E57D00C9EA8D /* SMBMovies.m in Sources */,
+				FD1F601F1E44F3CC00C9EA8D /* SMBMoviesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
