@@ -10,6 +10,12 @@
 
 @implementation SMBMovies
 
+-(instancetype)init
+{
+    return [self initWithTitle:@"" rating:0 summary:@""];
+}
+
+
 - (instancetype)initWithTitle:(NSString *)title rating:(NSInteger)rating summary:(NSString *)summary
 {
     self = [super init];
@@ -20,6 +26,7 @@
     }
     return self;
 }
+
 
 
 @end
