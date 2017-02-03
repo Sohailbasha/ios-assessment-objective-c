@@ -34,13 +34,21 @@
 
 -(instancetype)initWithDicitonary:(NSDictionary<NSString *,id> *)dictionary
 {
-    NSString *title = dictionary[@"title"];
-    NSInteger rating = [dictionary[@"vote_average"] integerValue];
-    NSString *summary = dictionary[@"overview"];
+    NSArray *resultsDictionary = dictionary[@"results"];
+    NSString *title = [[NSString alloc] init];
+    NSString *summary = [[NSString alloc] init];
+    NSInteger rating = 0;
     
-    if(![title isKindOfClass:[NSString class]])
+    if(![resultsDictionary isKindOfClass:[NSArray class]])
     {
         return nil;
+    }
+    
+    for(NSDictionary *dictionary in resultsDictionary)
+    {
+        title = dictionary[@"title"];
+        rating = [dictionary[@"vote_average"] integerValue];
+        summary = dictionary[@"overview"];
     }
     
     return [self initWithTitle:title rating:rating summary:summary];
