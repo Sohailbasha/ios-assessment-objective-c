@@ -10,18 +10,9 @@
 
 @implementation SMBMoviesController
 
-+(SMBMoviesController *)sharedController
-{
-    static SMBMoviesController *sharedController = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedController = [[SMBMoviesController alloc] init];
-    });
-    return sharedController;
-}
 
 
-
+// TODO - return serialized data using fetch request func.
 
 
 

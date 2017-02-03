@@ -16,5 +16,11 @@
 
 -(instancetype)initWithTitle:(NSString *)title rating:(NSInteger)rating summary:(NSString *)summary;
 
+@end
+
+
+@interface SMBMovies (JSONConversion)
+
+-(instancetype)initWithDicitonary:(NSDictionary<NSString *, id>*)dictionary;
 
 @end

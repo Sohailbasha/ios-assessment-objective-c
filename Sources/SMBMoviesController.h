@@ -10,7 +10,6 @@
 
 @interface SMBMoviesController : NSObject
 
-+ (SMBMoviesController *)sharedController;
 
 
 @end

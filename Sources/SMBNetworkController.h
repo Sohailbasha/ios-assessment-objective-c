@@ -10,5 +10,10 @@
 
 @interface SMBNetworkController : NSObject
 
++ (SMBNetworkController *)sharedController;
+
+-(void)fetchResultsForTitle:(NSString *)title completion:(void(^)(NSData *data, NSError *error))completion;
+
+
 
 @end
