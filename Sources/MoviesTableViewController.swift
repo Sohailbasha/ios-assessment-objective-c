@@ -8,13 +8,15 @@
 
 import UIKit
 
-class MoviesTableViewController: UITableViewController {
+class MoviesTableViewController: UITableViewController, UISearchBarDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     // MARK: - Table view data source
 
 
@@ -31,6 +33,12 @@ class MoviesTableViewController: UITableViewController {
         return cell
     }
     */
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let movieTitle = searchBar.text else {return}
+        
+        
+    }
 
 
 }

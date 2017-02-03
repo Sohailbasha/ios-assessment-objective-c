@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@class SMBMovies;
 
 @interface SMBMoviesController : NSObject
 
+@property (nonatomic, strong, readonly) NSArray *movies;
+
+-(void)searchMovies:(NSString *)title;
+-(void)clearMovies;
 
 
 @end
